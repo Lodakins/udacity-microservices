@@ -13,9 +13,11 @@ COPY requirements.txt /app/
 RUN pip install --upgrade pip &&\
     pip install -r /app/requirements.txt
 
+COPY . /app/
+
 ## Step 4:
 EXPOSE 80
 
 ## Step 5:
-CMD ["python","app.py"]
+CMD ["python", "app.py"]
 

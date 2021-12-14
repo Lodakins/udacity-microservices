@@ -8,4 +8,4 @@ docker build --tag uda_micro .
 docker images
 
 # Step 3:
-docker run uda_micro -dp 80:80  --name uda_micro
+docker run -p 8000:80 uda_micro
